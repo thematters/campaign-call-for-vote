@@ -49,7 +49,7 @@
     max-width: 30rem;
     margin: 0 auto;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
   }
 
   footer {

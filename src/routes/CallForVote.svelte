@@ -217,7 +217,8 @@
       xml:space="preserve"
       style="white-space: pre"
       font-size="36"
-      letter-spacing="0em"><tspan x="80" y="1152.96">前往投票： {campaignUrl}</tspan></text
+      letter-spacing="0em"
+      ><tspan x="80" y="1152.96">{'Matters ——————————————— 前往投票'}</tspan></text
     >
     <g clip-path="url(#clip1_3053_936)">
       <path

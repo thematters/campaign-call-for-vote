@@ -95,14 +95,15 @@
 </svelte:head>
 
 <header>
-  <h1 class="my-4 text-4xl leading-12 text-white">{PUBLIC_SITE_DESCRIPTION}</h1>
+  <h1 class="my-4 text-4xl leading-12 text-white">遊牧者計畫競選倒數計時</h1>
+  <h2 class="my-4 text-3xl leading-12 text-white">邀請更多人為你的提案投票</h2>
   <p class="leading-text">
     {#if !data?.searchParams?.userName}
       遊牧者計畫投票將於 1 月 22 日
       23:59（東八區）截止，為自己製作一張拉票海報，爭取更多支持吧！輸入你的 Matters ID
       並任選一款圖片，向世界表達你踏上旅途的決心。
     {:else}
-      把這張海報分享給潛在支持者，讓他們成為你遊牧路上的最大助力。最後衝刺時刻，為你加油！
+      把海報分享給潛在支持者，讓他們成為你遊牧路上的最大助力。最後衝刺時刻，祝你成功！
     {/if}
   </p>
 </header>
@@ -140,7 +141,7 @@
               type="text"
               name="campaignUrl"
               id="campaignUrl"
-              placeholder="放上你的提案網址"
+              placeholder="放上你的提案網址（將自動在海報上生成二維碼）"
               bind:value={campaignUrl}
             />
           </div>
@@ -233,6 +234,7 @@
   }
 
   .leading-text {
+    @apply text-left;
     color: #cbc3f4;
   }
 
